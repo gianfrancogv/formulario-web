@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/moment/moment.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <title>Formulario Leverbox</title>
+</head>
+<body>
+
+    <section class="container-fluid">
+        <h1 class="titulo">Nueva solicitud</h1>
+        
+        <!--Datos de la Unidad-->
+        <div class="col datos-unidad">
+            <h2 class="subtitulo">Datos de la unidad</h2>
+            <form>
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Patente" required>
+                  </div>
+                  <div class="col">
+                    <select class="custom-select" required>
+                      <option selected disabled>Marca</option>
+                      <option>Marca 1</option>
+                      <option>Marca 2</option>
+                      <option>Marca 3</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select class="custom-select" required>
+                      <option selected disabled>Modelo</option>
+                      <option>Modelo 1</option>
+                      <option>Modelo 2</option>
+                      <option>Modelo 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <select class="custom-select" required>
+                            <option selected disabled>Año</option>
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Chasis" required>
+                    </div>                    
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Kilometraje" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Datos de Cobertura-->
+        <div class="col datos-cobertura">
+            <h2 class="subtitulo">Datos de cobertura</h2>
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <select class="custom-select" required>
+                            <option selected disabled>Compañía</option>
+                            <option>Compañia 1</option>
+                            <option>Compañia 2</option>
+                            <option>Compañia 3</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="custom-select" required>
+                            <option selected disabled>Sucursal</option>
+                            <option>Sucursal 1</option>
+                            <option>Sucursal 2</option>
+                            <option>Sucursal 3</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="custom-select" required>
+                            <option selected disabled>Organizador</option>
+                            <option>Organizador 1</option>
+                            <option>Organizador 2</option>
+                            <option>Organizador 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <select class="custom-select" required>
+                            <option selected disabled>Tipo</option>
+                            <option>Tipo 1</option>
+                            <option>Tipo 2</option>
+                            <option>Tipo 3</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="custom-select" required>
+                            <option selected disabled>Clase</option>
+                            <option>Clase 1</option>
+                            <option>Clase 2</option>
+                            <option>Clase 3</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Póliza" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                <div class="input-group-prepend" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <input type="text" placeholder="Fecha" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker4').datetimepicker({
+                                format: 'L'
+                            });
+                        });
+                    </script>
+                    <div class="col">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                            <div class="input-group-text">$</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Franquicia">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-file" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                  aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01" data-browse="+">Denuncia</label>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.titulo {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 18pt;
+}
+
+.subtitulo {
+    font-size: 12pt;
+    padding-bottom: 5px;
+    color: #ff7712;
+    border-bottom: 1px solid #ff7712;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-file-label::after {
+    background-color: rgb(99, 99, 99) !important;
+    color: white !important;
+}
+
+.custom-file-input {
+    cursor: pointer;
+}
+
+.form-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.custom-select {
+    cursor: pointer;
+}
+
+.datos-cobertura .custom-select {
+    background: #fff url("data:image/svg+xml,<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'><path d='m0,6l12,12l12,-12l-24,0z'/><path fill='none' d='m0,0l24,0l0,24l-24,0l0,-24z'/></svg>") no-repeat right .75rem center/8px 10px !important;
+}
